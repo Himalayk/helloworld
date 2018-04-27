@@ -5,14 +5,15 @@ using System.Threading.Tasks;
 
 namespace HelloWorld.Models
 {
-    public abstract class Message
+    public class Message
     {
 
-        public long Id { get; set; }
+        public long MessageId { get; set; }
 
         public string Sender { get; set; }
 
         public string Content { get; set;  }
+
         
     }
 }

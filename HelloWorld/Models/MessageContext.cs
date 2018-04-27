@@ -8,6 +8,7 @@ namespace HelloWorld.Models
 {
     public class MessageContext:DbContext
     {
+
         public MessageContext(DbContextOptions<MessageContext>options) : base(options)
         {
 
@@ -15,9 +16,5 @@ namespace HelloWorld.Models
 
         public DbSet<Message> Messages { get; set; }
         
-        public DbSet<LongMessage> LongMessages { get; set; }
-
-        public DbSet<ShortMessage> ShortMessages { get; set; }
-
     }
 }
